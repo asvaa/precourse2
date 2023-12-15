@@ -10,12 +10,12 @@ let passportWithAddress = {
   }
 };
 
-// Создаем глубокую копию объекта passportWithAddress
+
 let deepCopyPassport = JSON.parse(JSON.stringify(passportWithAddress));
 
-// Меняем значение city на 'Bobryisk' в глубокой копии
+
 deepCopyPassport.address.city = 'Bobryisk';
 
-// Выводим исходный объект и его копию для проверки
-console.log('Исходный паспорт с адресом:', passportWithAddress);
-console.log('Глубокая копия паспорта с измененным городом:', deepCopyPassport);
+
+console.log(passportWithAddress);
+console.log( deepCopyPassport);
