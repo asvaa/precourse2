@@ -12,11 +12,11 @@ let passportWithAddress = {
 };
 
 // Создаем глубокую копию объекта passportWithAddress
-let copiedObject = JSON.parse(JSON.stringify(passportWithAddress));
+let copiedPassport = JSON.parse(JSON.stringify(passportWithAddress));
 
 // Меняем значение 'LA' на 'Bobryisk' в скопированном объекте
 copiedPassport.address.city = 'Bobryisk';
 
 // Выводим оригинальный объект и его копию для проверки
 console.log("Оригинальный объект:", passportWithAddress);
-console.log("Копия объекта с изменениями:", copiedObject);
+console.log("Копия объект с изменениями:", copiedPassport);
